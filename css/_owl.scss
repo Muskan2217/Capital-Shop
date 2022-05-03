@@ -1,0 +1,40 @@
+// owl crausal--
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  color: $black_color;
+  font-size: 5vw;
+  position: absolute;
+  top: 35%;
+  border: none;
+  transition: 0.5s;
+}
+
+.owl-nav button.owl-next:hover,
+.owl-nav button.owl-prev:hover {
+  color: $primary_color;
+  background-color: red;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 100px;
+  left: 50px;
+  left: calc(100vw - 95vw);
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: 100px;
+  right: calc(100vw - 95vw);
+}
+
+// for two
+#two,
+#four {
+  .owl-nav button.owl-prev {
+    left: -5%;
+  }
+
+  .owl-nav button.owl-next {
+    right: -5%;
+  }
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- owl carausal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <title>Capital Shop</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css2/all.css" />
+      </head>
+      <body>
+        <!-- =====++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-=========== -->
+        <!-- navigation starts from here -->
+        <nav class="flex_box header" id="navbar">
+          <!-- logo -->
+          <div class="logo flex_box">
+            <a href="home"> <img src="img/logo1.png" alt="logo-img" /></a>
+            <h2><span>Capital</span> Shop</h2>
+          </div>
+          <!-- main menu -->
+          <menu id="menu">
+          <div class="flex_box" id="menu_item">
+              <li><a href="index.html">home</a></li>
+          <li><a href="category.html">men</a></li>
+          <li><a href="category.html">women</a></li>
+          <li class="subscript">
+            <a href="category.html">baby Collection</a><sup>New</sup>
+          </li>
+            <li id="pages">
+              <a href="#homepages">pages</a>
+              <i class="fa-solid fa-angle-down"></i>
+              <!-- dropdown -->
+              <ul class="dropdown flex_box">
+                <li><a href="login.html">login</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><a href="productDetails.html">product detail</a></li>
+                <li><a href="checkOut.html">product checkout</a></li>
+              </ul>
+            </li>
+            <li id="blog">
+              <a href="#homeblog">blog</a><i class="fa-solid fa-plus"></i>
+              <!-- dropdown -->
+              <ul class="dropdown blog_links flex_box">
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="#home">element</a></li>
+                <li><a href="blogDetails.html">blog detail</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+          </div>
+          <!-- menu icon -->
+          <a href="#"  class="flex_box" id="menu_bar" >
+            <h2>Menu</h2>  <i class="fa fa-bars" area-hidden="true"></i>
+          </a>
+          
+          </menu>
+          <!-- header right -->
+          <div class="header_right">
+            <ul class="flex_box">
+              <a href=""> <i class="fa fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa fa-user"></i></a>
+              <a href=""> <i class="fa fa-cart-shopping"></i><sup>1</sup></a>
+            </ul>
+          </div>
+        </nav>
+        <!-- navigation ends here -->
+        <!-- home section -->
+        <section id="home">
+          <div class="home_header flex_box">
+            <h3>Sale Up To 50% Biggest Discounts. Hurry!Limited Perriod Offer</h3>
+            <a href="#home"> <span>Shop Now</span></a>
+          </div>
+        </section>
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- Category header starts from here -->
+        <section id="blogDetails_header" class="flex_box">
+          <h1>Category</h1>
+          <div class="links flex_box">
+            <a href="#home">Home</a>
+            |
+            <a href="category.html">Category</a>
+          </div>
+        </section>
+        <!-- Category header ends here -->
+      
+        <section class="main_area flex_box">
+
+            <section class="left_main_area flex_box">
+             <!-- ------------- -->
+             <select name="category" id="#">
+                <option value="category"selected>Category</option>
+                <option value="category">Category 1</option>
+                <option value="category">Category 2</option>
+                <option value="category">Category 3</option>
+                <option value="category">Category 4</option>
+                <option value="category">Category 5</option>
+                <option value="category">Category 6</option>
+            </select>
+          <!-- ------------- -->
+             <select name="type" id="#">
+                <option value="type"selected>Type</option>
+                <option value="type">Type 1</option>
+                <option value="type">Type 2</option>
+                <option value="type">Type 3</option>
+                <option value="type">Type 4</option>
+                <option value="type">Type 5</option>
+                <option value="type">Type 6</option>
+            </select>
+
+              <!-- ------------- -->
+             <select name="size" id="#">
+                <option value="size"selected>Size</option>
+                <option value="type">XXL</option>
+                <option value="type">Xl</option>
+                <option value="type">LG</option>
+                <option value="type">M</option>
+                <option value="type">SM</option>
+            </select>
+
+              <!-- ------------- -->
+             <select name="color" id="#">
+                <option value="color"selected>Color</option>
+                <option value="Color">Red</option>
+                <option value="type">Blue</option>
+                <option value="type">Green</option>
+                <option value="type">Black</option>
+                <option value="type">Yellow</option>
+            </select>
+
+            <!-- select area ends here -->
+<div class="filter_area flex_box">
+ <h3>Filter by Genres</h3>
+ <label class="container">History
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container">Horror-Thriller
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container">Love Stories
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container">Science Fiction
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container">HBioigraphy
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+
+<!-- +++++++++++++++++++++++++++++++++++ -->
+    <h3>Filter by Brands</h3>
+    <label class="container">Green Publication
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container">Anondo Publication
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container"> Smith Publication
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container"> Arun Publication
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+   <br>
+   <!-- ---- -->
+    <label class="container">Shaba Publication
+    <input type="checkbox">
+    <span class="checkmark"></span>
+   </label>
+  
+</div>
+
+            </section>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- right main area  -->
+            <section class="right_main_area flex_box">
+ <!--img 1 -->
+        <div class="item flex_box">
+          <img src="img/A4.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 1 -->
+        <div class="item flex_box">
+          <img src="img/A3.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 3 -->
+        <div class="item flex_box">
+          <img src="img/A2.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 4 -->
+        <div class="item flex_box">
+          <img src="img/A1.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 5 -->
+        <div class="item flex_box">
+          <img src="img/trend1.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 6 -->
+        <div class="item flex_box">
+          <img src="img/A3.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 7 -->
+        <div class="item flex_box">
+          <img src="img/trend3.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+         <!--img 8 -->
+        <div class="item flex_box">
+          <img src="img/trend4.JPG" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+
+         <!--img 9 -->
+        <div class="item flex_box">
+          <img src="img/trend1.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+            </section>
+        </section>
+              <!-- footer -->
+              <footer class="flex_box">
+                <!-- --- first_sec----- -->
+                <section class="first_sec flex_box">
+                  <div class="text_area">
+                    <h2>Subscribe Newsletter</h2>
+                    <h3>Subscribe Newsletter to get 5% on all products.</h3>
+                  </div>
+                  <!-- ---- -->
+                  <div class="input_area">
+                    <input type="email" placeholder="Enter your email" />
+                    <button type="submit" class="input_btn">Subscripe</button>
+                  </div>
+                  <!-- ------ -->
+                  <div class="social_links flex_box">
+                    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                </section>
+                <hr />
+                <!-- ------second sec------ -->
+                <section class="second_sec flex_box">
+                  <!-- logo -->
+                  <div class="logo flex_box">
+                    <a href="home"> <img src="img/logo2.png" alt="logo-img" /></a>
+                    <h2><span>Capital</span> Shop</h2>
+                  </div>
+                  <!-- shop detail -->
+                  <div class="shop_detail flex_box">
+                    <ul>
+                      <h2>Shop Men</h2>
+                      <a href="#home"> <li>Clothing Fashion</li> </a>
+                      <a href="#home"> <li>Winter</li> </a>
+                      <a href="#home"> <li>Summer</li> </a>
+                      <a href="#home"> <li>Formal</li> </a>
+                      <a href="#home"> <li>Casual</li> </a>
+                    </ul>
+                    <ul>
+                      <h2>Shop Women</h2>
+                      <a href="#home"> <li>Clothing Fashion</li> </a>
+                      <a href="#home"> <li>Winter</li> </a>
+                      <a href="#home"> <li>Summer</li> </a>
+                      <a href="#home"> <li>Formal</li> </a>
+                      <a href="#home"> <li>Casual</li> </a>
+                    </ul>
+                    <ul>
+                      <h2>Baby Collection</h2>
+                      <a href="#home"> <li>Clothing Fashion</li> </a>
+                      <a href="#home"> <li>Winter</li> </a>
+                      <a href="#home"> <li>Summer</li> </a>
+                      <a href="#home"> <li>Formal</li> </a>
+                      <a href="#home"> <li>Casual</li> </a>
+                    </ul>
+                    <ul>
+                      <h2>Quick Links</h2>
+                      <a href="#home"> <li>Track Your Order</li> </a>
+                      <a href="#home"> <li>Support</li> </a>
+                      <a href="#home"> <li>FAQ</li> </a>
+                      <a href="#home"> <li>Carrier</li> </a>
+                      <a href="#home"> <li>About</li> </a>
+                      <a href="#home"> <li>Contact Us</li> </a>
+                    </ul>
+                  </div>
+                </section>
+                <hr />
+                <!-- ----- copyright sec------ -->
+                <div class="copyright_sec">
+                  <h3>
+                  Copyright © 2022 All rights reserved
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  </h3>
+                </div>
+              </footer>
+              <!-- owl carousel jq -->
+              <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+              integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+              ></script>
+              <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+              integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+              ></script>
+              <script src="js/script.js"></script>
+            </body>
+          </html>
