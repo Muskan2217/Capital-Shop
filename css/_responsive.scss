@@ -1,3 +1,7 @@
+
+
+// media query for min-width--------------------------------------------------
+
 @media (min-width: 800px) {
   .header {
     menu {
@@ -131,7 +135,7 @@
   }
 }
 
-// media query--------------------------------------------------
+// media query for max-width--------------------------------------------------
 // ++++++++++++++++++++++++++++++++++++++++
 
 @media (max-width: 800px) {
@@ -162,7 +166,7 @@
       left: 0;
       right: 0;
       z-index: 99;
-      padding: 4rem 0.5rem 0.5rem;
+      padding: 4rem 0.5rem 0;
       display: flex;
       justify-content: space-between;
       transition: all 0.5s ease-in-out;
@@ -359,7 +363,7 @@
   }
 }
 
-// @950px-----------------------------
+// for 950px-----------------------------
 
 @media (max-width: 950px) {
   html {
@@ -399,11 +403,10 @@
   .categories_area {
     justify-content: center;
   }
-}
 
-// 460px
-@media (max-width: 460px) {
-  // login page
+
+
+    // login page
   #login_box {
     background-color: #ffffff;
     width: 80%;
@@ -421,4 +424,40 @@
       }
     }
   }
+}
+
+// 400px
+
+@media (max-width: 408px) {
+
+ 
+   .header {
+.logo {
+    width: 70%;
+
+    img{
+      width: 80%;
+    }
+
+    h2{
+      font-size: 1rem;
+      span{
+        font-size: 1.5rem;
+      }
+    }
+  }
+ 
+
+    .header_right {
+      width: 30%;
+
+    }
+  }
+// ---------
+
+
+.header menu {
+  
+    top: 60px;
+}
 }

@@ -577,8 +577,7 @@ footer {
 
   // footer second section starts from here--------
   .second_sec {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 2rem 0;
     align-items: flex-start;
 
     .logo {
@@ -586,6 +585,7 @@ footer {
     }
 
     .shop_detail {
+     
       width: 650px;
       align-items: flex-start;
 
@@ -629,6 +629,8 @@ footer {
     .fa-heart {
       color: $primary_color;
     }
+
+  
   }
 
   // horizonal lines----
@@ -638,6 +640,70 @@ footer {
     border: 1px solid #585858b1;
     border-top: none;
   }
+
+// go to top button
+
+  .to_top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  font-size: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  color: var(--yellow);
+      background-color: $primary_color;
+  border-radius: 50%;
+    padding: 0rem .7rem;
+z-index: 1000;
+  .fa-angle-up{
+    color: $white;
+  
+      transition: all 1s;
+
+    animation: myAnimation   1.8s  linear  infinite;
+  }
+
+  @keyframes myAnimation  {
+    0%{
+      transform: translateY(17px);
+      opacity: 0;
+    }
+    
+    5%{
+      opacity:.2;
+    }
+
+    50%{
+      opacity: 1;
+    }
+
+70%{
+      opacity: .7;
+    }
+
+
+
+    100%{
+      transform: translateY(-17px);
+      opacity: 0;
+    }
+  }
+}
+
+.to_top:hover {
+   .fa-angle-up{
+     animation: 0;
+   }
+}
+
+.to_top.active {
+  bottom: 2rem;
+  pointer-events: auto;
+  opacity: 1;
+
+
+}
 }
 
 

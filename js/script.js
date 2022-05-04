@@ -79,6 +79,7 @@ $(document).ready(function () {
   });
 });
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // toggle menu =============================
 
 let menu = document.getElementById("menu");
@@ -87,8 +88,11 @@ let showhide = document.getElementById("menu_item");
 document.getElementById("menu_bar").addEventListener("click", function () {
   if (showhide.style.height === "250px") {
     showhide.style.height = "0";
+    menu.style.paddingBottom ="0"
   } else {
     showhide.style.height = "250px";
+     menu.style.paddingBottom = "1rem";
+
   }
 });
 
@@ -195,6 +199,7 @@ function scrollFunction() {
   }
 }
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // cart number increase and decrese function
 
 function up(max) {
@@ -245,3 +250,22 @@ function down_third(min) {
     document.getElementById("myNumber3").value = min;
   }
 }
+
+
+
+// ==================================================================================================================
+
+// scroll to top button
+
+
+const toTop = document.querySelector(".to_top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+
+});
+

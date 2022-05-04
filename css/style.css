@@ -469,8 +469,7 @@ footer .first_sec .social_links a:hover {
   transform: translateY(-5px);
 }
 footer .second_sec {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 2rem 0;
   align-items: flex-start;
 }
 footer .second_sec .logo {
@@ -517,6 +516,73 @@ footer hr {
   width: 100%;
   border: 1px solid rgba(88, 88, 88, 0.6941176471);
   border-top: none;
+}
+footer .to_top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  font-size: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  color: var(--yellow);
+  background-color: #df1616;
+  border-radius: 50%;
+  padding: 0rem 0.7rem;
+  z-index: 1000;
+}
+footer .to_top .fa-angle-up {
+  color: #ebe9e9;
+  transition: all 1s;
+  -webkit-animation: myAnimation 1.8s linear infinite;
+          animation: myAnimation 1.8s linear infinite;
+}
+@-webkit-keyframes myAnimation {
+  0% {
+    transform: translateY(17px);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-17px);
+    opacity: 0;
+  }
+}
+@keyframes myAnimation {
+  0% {
+    transform: translateY(17px);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-17px);
+    opacity: 0;
+  }
+}
+footer .to_top:hover .fa-angle-up {
+  -webkit-animation: 0;
+          animation: 0;
+}
+footer .to_top.active {
+  bottom: 2rem;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -891,7 +957,7 @@ input:focus, textarea:focus {
     left: 0;
     right: 0;
     z-index: 99;
-    padding: 4rem 0.5rem 0.5rem;
+    padding: 4rem 0.5rem 0;
     display: flex;
     justify-content: space-between;
     transition: all 0.5s ease-in-out;
@@ -1068,8 +1134,7 @@ footer .first_sec .social_links {
   .categories_area {
     justify-content: center;
   }
-}
-@media (max-width: 460px) {
+
   #login_box {
     background-color: #ffffff;
     width: 80%;
@@ -1083,6 +1148,27 @@ footer .first_sec .social_links {
   #login_box form button,
 #login_box form a {
     margin-top: 2rem;
+  }
+}
+@media (max-width: 408px) {
+  .header .logo {
+    width: 70%;
+  }
+  .header .logo img {
+    width: 80%;
+  }
+  .header .logo h2 {
+    font-size: 1rem;
+  }
+  .header .logo h2 span {
+    font-size: 1.5rem;
+  }
+  .header .header_right {
+    width: 30%;
+  }
+
+  .header menu {
+    top: 60px;
   }
 }
 button:hover {
