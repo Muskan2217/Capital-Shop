@@ -1,0 +1,95 @@
+#product,
+#author_sec {
+  background-color: $primary_color;
+  width: 85%;
+  margin: 4rem auto;
+
+  .image {
+    padding: 0 3rem;
+    justify-content: space-between;
+
+    img {
+      width: 50%;
+    }
+
+    .details {
+      color: $white;
+      h2,
+      h3 {
+        color: $white;
+        font-weight: 100;
+      }
+      h3 {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+      }
+      p {
+        padding: 0.5rem 0 1.5rem;
+      }
+      span {
+        font-size: 1.9rem;
+        font-weight: 600;
+      }
+
+      button {
+        background: $white;
+        color: $dark_grey;
+        width: 65%;
+        border-radius: 5rem;
+        padding: 0.7rem 0;
+        margin: 1.5rem 0;
+      }
+
+      button:hover {
+        background: #f5f5f526;
+        color: $white;
+      }
+      .fa-share-nodes {
+        padding: 0.7rem 0.8rem;
+        font-size: 1.5rem;
+        background-color: #f5f5f526;
+        border-radius: 50%;
+        margin: 5% 2%;
+      }
+
+      .fa-share-nodes:hover {
+        background-color: $white;
+        color: $light_grey;
+      }
+    }
+  }
+}
+
+// ------------------------------
+
+#author_sec {
+  background-color: #fff;
+  padding-right: 20%;
+
+  .author_header {
+    width: 100%;
+    margin-bottom: 2rem;
+    ul {
+      width: 340px;
+      border-bottom: 0.1px solid $light_grey;
+
+      .active {
+        color: $primary_color;
+        border-bottom: 4px solid $primary_color;
+      }
+      li {
+        padding-bottom: 2.3rem;
+      }
+      a {
+        font-weight: 500;
+        padding-bottom: 2.1rem;
+        transition: none;
+      }
+
+      a:hover {
+        color: $primary_color;
+        border-bottom: 4px solid $primary_color;
+      }
+    }
+  }
+}

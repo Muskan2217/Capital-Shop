@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- owl carausal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Capital Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css2/all.css" />
+  </head>
+  <body>
+    <!-- =====++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-=========== -->
+    <!-- navigation starts from here -->
+    <nav class="flex_box header" id="navbar">
+      <!-- logo -->
+      <div class="logo flex_box">
+        <a href="home"> <img src="img/logo1.png" alt="logo-img" /></a>
+        <h2><span>Capital</span> Shop</h2>
+      </div>
+      <!-- main menu -->
+      <menu id="menu"> 
+        <div class="flex_box" id="menu_item">
+          <li><a href="#home">home</a></li>
+          <li><a href="category.html">men</a></li>
+          <li><a href="category.html">women</a></li>
+          <li class="subscript">
+            <a href="category.html">baby Collection</a><sup>New</sup>
+          </li>
+          <li id="pages">
+            <a href="#homepages">pages</a>
+            <i class="fa-solid fa-angle-down"></i>
+            <!-- dropdown -->
+            <ul class="dropdown flex_box">
+              <li><a href="login.html">login</a></li>
+              <li><a href="cart.html">cart</a></li>
+              <li><a href="productDetails.html">product detail</a></li>
+              <li><a href="checkOut.html">product checkout</a></li>
+            </ul>
+          </li>
+          <li id="blog">
+            <a href="#homeblog">blog</a><i class="fa-solid fa-plus"></i>
+            <!-- dropdown -->
+            <ul class="dropdown blog_links flex_box">
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="#home">element</a></li>
+              <li><a href="blogDetails.html">blog detail</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">contact</a></li>
+        </div>
+        <!-- menu icon -->
+
+          <a href="#"  class="flex_box" id="menu_bar" > 
+           <h2>Menu</h2>  <i class="fa fa-bars" area-hidden="true"></i>
+          </a>
+   
+      </menu>
+      <!-- header right -->
+      <div class="header_right">
+        <ul class="flex_box">
+          <a href=""> <i class="fa fa-magnifying-glass"></i></a>
+          <a href=""><i class="fa fa-user"></i></a>
+          <a href=""> <i class="fa fa-cart-shopping"></i><sup>1</sup></a>
+        </ul>
+      </div>
+    </nav>
+    <!-- navigation ends here -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- home section starts from here -->
+    <section id="home">
+      <div class="home_header flex_box">
+        <h3>Sale Up To 50% Biggest Discounts. Hurry!Limited Perriod Offer</h3>
+        <a href="#home"> <span>Shop Now</span></a>
+      </div>
+      <div id="slider" class="flex_box">
+        <img id="sider_imgs" />
+        <!------>
+        <div class="text_area">
+          <span>Fashion Sale</span>
+          <h1>Minimal Menz Style</h1>
+          <p>
+            Consectetur adipisicing elit. Laborum fuga <br> incidunt laboriosam
+            voluptas iure, delectus <br> dignissimos facilis neque nulla earum.
+          </p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+     <!-- fashion section start from here -->
+    <section id="fashion" class="flex_box">
+      <section class="men">
+        <img src="img/fashion1.JPG" alt="" class="img" />
+        <div class="item_detail flex_box">
+          <h2>Men's Fashion</h2>
+          <a href=""> <button>Shop Now</button></a>
+        </div>
+      </section>
+      <section class="women">
+        <img src="img/fashion2.JPG" alt="" />
+        <div class="item_detail flex_box">
+          <h2>Women's Fashion</h2>
+          <a href=""> <button>Shop Now</button></a>
+        </div>
+      </section>
+      <section class="baby">
+        <img src="img/fashion3.JPG" alt="" />
+        <div class="item_detail flex_box">
+          <h2>Baby Fashion</h2>
+          <a href=""> <button>Shop Now</button></a>
+        </div>
+      </section>
+    </section>
+    <!-- fashion section ends here -->
+
+
+    <!-- trending section start from here -->
+    <section id="trending" class="flex_box">
+      <div class="trending_header flex_box">
+        <!-- trending header -->
+        <h1>Trending This Weak</h1>
+        <ul class="flex_box">
+          <li><a href="">men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Baby</a></li>
+          <li><a href="">Fashion</a></li>
+        </ul>
+      </div>
+      <!-- trending header ends -->
+      <div class="owl-carousel owl-theme" id="two">
+        <!-- trending slider -->
+        <!--item 1 -->
+        <div class="item flex_box">
+          <img src="img/trend1.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+        <!--item 2 -->
+        <div class="item flex_box">
+          <img src="img/trend2.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+        <!--item 3 -->
+        <div class="item flex_box">
+          <img src="img/trend3.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+        <!--item 4 -->
+        <div class="item flex_box">
+          <img src="img/trend4.jpg" alt="" />
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+        </div>
+      </div>
+      <!-- trending slider ends -->
+    </section>
+    <!-- trending section ends here -->
+
+    <!-- testimonial slider starts from here -->
+    <div class="owl-carousel owl-theme testimonial" id="three">
+      <!-- ------- -->
+      <div class="item flex_box flex_box">
+        <div class="box flex_box">
+          <h1>Customer Testimonial</h1>
+          <p>
+            Everybody is different,which is why we offer styles for every body.
+            Laborum fuga incidunt laboriosam voluptas iure,delectus dignissimos
+            facilis neque nulla earum.
+          </p>
+          <div class="testimonial_foot flex_box">
+            <img src="img/testimonial.JPG" alt="" />
+            <h4>Petey Cruiser <br /><span>Designer at FreeWeb</span></h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------- -->
+      <div class="item flex_box flex_box">
+        <div class="box flex_box">
+          <h1>Customer Testimonial</h1>
+          <p>
+            Everybody is different,which is why we offer styles for every body.
+            Laborum fuga incidunt laboriosam voluptas iure,delectus dignissimos
+            facilis neque nulla earum.
+          </p>
+          <div class="testimonial_foot flex_box">
+            <img src="img/testimonial.JPG" alt="" />
+            <h4>Petey Cruiser<br /><span>Designer at FreeWeb</span></h4>
+          </div>
+        </div>
+      </div>
+        </div>
+    <!-- testimonial slider ends here -->
+    <!-- accessories section starts from here -->
+    <section class="accessories">
+      <h1>You May Like</h1>
+      <!-- accessories slider starts  -->
+      <div class="owl-carousel owl-theme" id="four">
+        <div class="item flex_box">
+          <img src="img/A1.jpg" alt="" />
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+        </div>
+        <div class="item flex_box">
+          <img src="img/A2.jpg" alt="" />
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+        </div>
+        <div class="item flex_box">
+          <img src="img/A3.jpg" alt="" />
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+        </div>
+        <div class="item flex_box">
+          <img src="img/A4.jpg" alt="" />
+          <h2>Cashmere Tank + Bag</h2>
+          <span>$98.00 <del>$120.00</del></span>
+          <!-- product detail -->
+          <div class="pro_detail flex_box">
+            <a href=""> <i class="fa fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""> <i class="fa fa-magnifying-glass-plus"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- accessories slider ends  -->
+    </section>
+    <!-- accessories section ends  here -->
+    <!-- latest section starts from here -->
+    <section class="latest_section">
+      <h1>Latest News</h1>
+      <div class="inner flex_box">
+        <!-- img box -->
+        <div class="img_box flex_box">
+          <img src="img/Latest1.jpg" alt="" />
+          <span>Fashion Tips</span>
+          <h2>What curling Iron Are The Best Ones</h2>
+          <p>
+            Consectetur adipising elit. Laborum fuge incidunt laboriosam
+            voluptas iure, delecuts..
+          </p>
+          <button>Reade More</button>
+        </div>
+        <!-- img box -->
+        <div class="img_box flex_box">
+          <img src="img/Latest2.jpg" alt="" />
+          <span>Fashion Tips</span>
+          <h2>Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h2>
+          <p>
+            Consectetur adipising elit. Laborum fuge incidunt laboriosam
+            voluptas iure, delecuts..
+          </p>
+          <button>Reade More</button>
+        </div>
+        <!-- img box -->
+        <div class="img_box flex_box">
+          <img src="img/Latest3.jpg" alt="" />
+          <span>Fashion Tips</span>
+          <h2>What curling Iron Are The Best Ones</h2>
+          <p>
+            Consectetur adipising elit. Laborum fuge incidunt laboriosam
+            voluptas iure, delecuts..
+          </p>
+          <button>Reade More</button>
+        </div>
+      </div>
+    </section>
+    <!-- latest section ends here -->
+    <!-- categories section starts from here -->
+    <section class="categories_area flex_box">
+      <div class="box flex_box">
+        <img src="img/C1.JPG" alt="" />
+        <h2>Fast & Free Delivery</h2>
+        <span>Free delivery on all orders</span>
+      </div>
+      <div class="box flex_box">
+        <img src="img/C2.JPG" alt="" />
+        <h2>Fast & Free Delivery</h2>
+        <span>Free delivery on all orders</span>
+      </div>
+      <div class="box flex_box">
+        <img src="img/C3.JPG" alt="" />
+        <h2>Fast & Free Delivery</h2>
+        <span>Free delivery on all orders</span>
+      </div>
+      <div class="box flex_box">
+        <img src="img/C44.JPG" alt="" />
+        <h2>Fast & Free Delivery</h2>
+        <span>Free delivery on all orders</span>
+      </div>
+    </section>
+    <!-- categories section ends here -->
+    <!-- footer -->
+    <footer class="flex_box">
+      <!-- --- first_sec----- -->
+      <section class="first_sec flex_box">
+        <div class="text_area">
+          <h2>Subscribe Newsletter</h2>
+          <h3>Subscribe Newsletter to get 5%  on all products.</h3>
+        </div>
+        <!-- ---- -->
+        <div class="input_area">
+          <input type="email" placeholder="Enter your email" />
+          <button  class="input_btn btn">Subscripe</button>
+        </div>
+        <!-- ------ -->
+        <div class="social_links flex_box">
+          <a href=""> <i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </section>
+      <hr/>
+      <!-- ------second sec------ -->
+      <section class="second_sec flex_box">
+        <!-- logo -->
+        <div class="logo flex_box">
+          <a href="home"> <img src="img/logo2.png" alt="logo-img" /></a>
+          <h2><span>Capital</span> Shop</h2>
+        </div>
+        <!-- shop detail -->
+        <div class="shop_detail flex_box">
+          <ul>
+            <h2>Shop Men</h2>
+            <a href="#home"> <li>Clothing Fashion</li> </a>
+            <a href="#home"> <li>Winter</li> </a>
+            <a href="#home"> <li>Summer</li> </a>
+            <a href="#home"> <li>Formal</li> </a>
+            <a href="#home"> <li>Casual</li> </a>
+          </ul>
+          <ul>
+            <h2>Shop Women</h2>
+            <a href="#home"> <li>Clothing Fashion</li> </a>
+            <a href="#home"> <li>Winter</li> </a>
+            <a href="#home"> <li>Summer</li> </a>
+            <a href="#home"> <li>Formal</li> </a>
+            <a href="#home"> <li>Casual</li> </a>
+          </ul>
+          <ul>
+            <h2>Baby Collection</h2>
+            <a href="#home"> <li>Clothing Fashion</li> </a>
+            <a href="#home"> <li>Winter</li> </a>
+            <a href="#home"> <li>Summer</li> </a>
+            <a href="#home"> <li>Formal</li> </a>
+            <a href="#home"> <li>Casual</li> </a>
+          </ul>
+          <ul>
+            <h2>Quick Links</h2>
+            <a href="#home"> <li>Track Your Order</li> </a>
+            <a href="#home"> <li>Support</li> </a>
+            <a href="#home"> <li>FAQ</li> </a>
+            <a href="#home"> <li>Carrier</li> </a>
+            <a href="#home"> <li>About</li> </a>
+            <a href="#home"> <li>Contact Us</li> </a>
+          </ul>
+        </div>
+      </section>
+      <hr/>
+      <!-- ----- copyright sec------ -->
+      <div class="copyright_sec">
+        <h3>
+          Copyright © 2022 All rights reserved
+          <a href="#" class="fa-solid fa-heart"></a>
+        </h3>
+
+              <!-- scroll to top button-->
+              <a href="#"class="to_top">
+                  <i class="fa fa-angle-up "aria-hidden="true"></i>
+                </a> 
+       </div>
+
+    </footer>
+
+      
+    <!-- owl carousel jq -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
