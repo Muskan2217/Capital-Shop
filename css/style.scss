@@ -10,7 +10,7 @@ $white: #ebe9e9;
 $wheat: #f7e8cc;
 $light_blue: #31597a;
 $span_color: #c1a45c;
-$pink:#f4f4f4;;
+$pink: #f4f4f4;
 
 * {
   box-sizing: border-box;
@@ -59,16 +59,16 @@ span {
   cursor: pointer;
   transition: 0.1s;
 }
-  .btn,.input_btn{
-        width: 20%;
-        border: none;
-        background: $primary_color;
-        color: $white;
-        padding: 1rem 0;
-        transition: 0.5s;
-      }
+.btn,
+.input_btn {
+  width: 20%;
+  border: none;
+  background: $primary_color;
+  color: $white;
+  padding: 1rem 0;
+  transition: 0.5s;
+}
 
-   
 // -------------------------------
 @mixin samepro {
   h2 {
@@ -123,14 +123,13 @@ span {
 
 // header-----------------------------------------------------------------------
 .header {
-   width: 100%;
+  width: 100%;
   padding: 1rem 2rem;
   padding: 2%;
   z-index: 99;
   background-color: $white;
-   transition: top .5s;
+  transition: top 0.5s;
 
-  
   // supscript
   sup {
     background-color: $primary_color;
@@ -147,8 +146,6 @@ span {
   menu {
     position: relative;
     width: 57%;
-
-   
   }
 
   // header-right
@@ -238,7 +235,7 @@ span {
         font-size: 2.2vw;
         margin: 2rem 0 0;
         font-weight: 600;
-        transition: .5s;
+        transition: 0.5s;
       }
 
       button:hover {
@@ -255,7 +252,7 @@ span {
 // fashion section
 
 #fashion {
-   section{
+  section {
     padding: 0;
     display: flex;
     flex: 1 1 250px;
@@ -263,32 +260,32 @@ span {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-  
-      background:linear-gradient(
-        rgba(255, 255, 255, 0),
-        rgba(25, 25, 24, 0.884)
-     );
 
-    img{width: 100%;
-    z-index: -1;
-      transition: all .5s ease-in-out;
-  }
+    background: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(25, 25, 24, 0.884)
+    );
+
+    img {
+      width: 100%;
+      z-index: -1;
+      transition: all 0.5s ease-in-out;
+    }
     // item details---------
 
     .item_detail {
-       flex: 1 1 120px;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 80%;
-    right: 0;
-    transition: .5s;
+      flex: 1 1 120px;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      top: 80%;
+      right: 0;
+      transition: 0.5s;
 
       h2 {
         color: $white;
         transition: 0.4s;
         font-size: 1.5rem;
-      
       }
 
       button {
@@ -302,28 +299,24 @@ span {
         opacity: -1;
         cursor: pointer;
         transition: 0.4s;
- 
       }
-
-  
     }
-  
   }
-  section:hover{
-  img{
-    transform: scale(1.1);
+  section:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .item_detail {
+      top: 60%;
+    }
+
+    button {
+      opacity: 1;
+    }
   }
 
-.item_detail{
-top:60%
-}
-  
-  button{
- opacity: 1;
-  }
-  }
-
-button:hover{
+  button:hover {
     letter-spacing: 2.5px;
   }
 }
@@ -543,8 +536,9 @@ footer {
         padding: 1rem 0.5rem;
       }
 
-    button:hover{background: $light_blue;}
-
+      button:hover {
+        background: $light_blue;
+      }
     }
 
     // first sec social links
@@ -586,7 +580,6 @@ footer {
     }
 
     .shop_detail {
-     
       width: 650px;
       align-items: flex-start;
 
@@ -630,8 +623,6 @@ footer {
     .fa-heart {
       color: $primary_color;
     }
-
-  
   }
 
   // horizonal lines----
@@ -642,72 +633,66 @@ footer {
     border-top: none;
   }
 
-// go to top button
+  // go to top button
 
   .to_top {
-  position: fixed;
-  right: 2%;
-  bottom: 2%;
-  font-size: 2rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
-  color: var(--yellow);
-      background-color: $primary_color;
-  border-radius: 50%;
-    padding: 0rem .7rem;
-z-index: 1000;
-  .fa-angle-up{
-    color: $white;
-  
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    flex-direction: column;
+    transition: all 0.4s;
+    background-color: $primary_color;
+    border-radius: 50%;
+    padding: 0.3rem 0.7rem;
+    z-index: 1000;
+
+    .fa-angle-up {
+      color: #fdeeeb;
       transition: all 1s;
-
-    animation: myAnimation   1.8s  linear  infinite;
+      animation: myAnimation 2s linear infinite;
+    }
   }
 
-  @keyframes myAnimation  {
-    0%{
-      transform: translateY(17px);
+  @keyframes myAnimation {
+    0% {
+      transform: translateY(9px);
       opacity: 0;
     }
-    
-    5%{
-      opacity:.2;
+
+    5% {
+      opacity: 0.2;
     }
 
-    50%{
-      opacity: 1;
+    50% {
+      opacity: 0.8;
     }
 
-70%{
-      opacity: .7;
+    70% {
+      opacity: 0.2;
     }
 
-
-
-    100%{
-      transform: translateY(-17px);
+    100% {
+      transform: translateY(-9px);
       opacity: 0;
     }
   }
+  // -----------------------------------
 }
 
 .to_top:hover {
-   .fa-angle-up{
-     animation: 0;
-   }
+  .fa-angle-up {
+    animation: 0;
+  }
 }
 
 .to_top.active {
   bottom: 2rem;
   pointer-events: auto;
   opacity: 1;
-
-
 }
-}
-
-
 
 @import "owl";
 @import "login";
@@ -720,6 +705,3 @@ z-index: 1000;
 @import "checkOut";
 @import "custombuttons";
 @import "category";
-
-
-

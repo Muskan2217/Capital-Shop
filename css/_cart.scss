@@ -14,6 +14,11 @@
 #cart_product {
   padding: 0rem 5rem;
 
+  @media (max-width: 767px) {
+    & {
+      padding: 0 1.5rem;
+    }
+  }
   // box------
 
   .box {
@@ -37,11 +42,31 @@
     // left box------
     .box_left {
       width: 55%;
+      @media (max-width: 550px) {
+        & {
+          width: 30%;
+        }
+      }
+      @media (max-width: 400px) {
+        & {
+          h2 {
+            padding-bottom: 0;
+            margin-bottom: 2rem;
+          }
+          width: 100%;
+          padding-bottom: 2rem;
+        }
+      }
     }
 
     // right box------
     .box_right {
       width: 40%;
+      @media (max-width: 550px) {
+        & {
+          width: 220px;
+        }
+      }
       .flex_box {
         flex-direction: column;
       }
@@ -106,9 +131,30 @@
 
 .button_sec {
   padding: 3rem 5rem;
+  @media (max-width: 767px) {
+    & {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+  }
+
   button {
     border-radius: 30px;
-    margin-right: 150px;
+    margin-right: 10%;
+
+    @media (max-width: 767px) {
+      & {
+        margin-right: 0;
+
+        margin: 1rem;
+        width: 250px;
+      }
+    }
+  }
+
+  button:hover {
+    border-radius: 0;
+    background-color: #000000;
   }
   border-bottom: 1px solid #c9c9c9;
 }
@@ -118,16 +164,28 @@
 #shipping_sec {
   padding: 3rem 5rem;
   border-bottom: 1px solid #c9c9c9;
+
+  @media (max-width: 767px) {
+    & {
+      padding: 3rem 1rem;
+    }
+  }
   .map {
-    width: 40%;
+    width: 50%;
   }
 
   .shipping_details {
-    width: 40%;
+    width: 300px;
     align-items: flex-start;
+    @media (max-width: 767px) {
+      & {
+        width: 100%;
+      }
+    }
 
     .input_area {
       width: 100%;
+
       flex-direction: column;
       align-items: flex-end;
 
@@ -143,28 +201,44 @@
 
       select,
       .zipcode {
-        width: 300px;
+        width: 100%;
+
         margin: 0.7rem 0;
         border: none;
-  
+
         padding: 10px 25px;
         background-color: $white;
+
+        @media (max-width: 767px) {
+          & {
+            width: 285px;
+          }
+        }
       }
       select {
         option {
-          width: 300px;
           margin: 0.7rem 0;
           border: none;
-      
         }
       }
 
       button {
-        width: 150px;
+        width: 100%;
         height: 40px;
         padding: 0;
         border-radius: 30px;
         margin: 1rem 0;
+
+        @media (max-width: 767px) {
+          & {
+            width: 285px;
+          }
+        }
+      }
+
+      button:hover {
+        border-radius: 0;
+        background-color: #000000;
       }
     }
   }
