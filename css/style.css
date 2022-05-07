@@ -49,7 +49,8 @@ span {
   transition: 0.1s;
 }
 
-.btn, .input_btn {
+.btn,
+.input_btn {
   width: 20%;
   border: none;
   background: #df1616;
@@ -524,62 +525,64 @@ footer .to_top {
   font-size: 2rem;
   opacity: 0;
   pointer-events: none;
+  flex-direction: column;
   transition: all 0.4s;
-  color: var(--yellow);
   background-color: #df1616;
   border-radius: 50%;
-  padding: 0rem 0.7rem;
+  padding: 0.3rem 0.7rem;
   z-index: 1000;
 }
 footer .to_top .fa-angle-up {
-  color: #ebe9e9;
+  color: #fdeeeb;
   transition: all 1s;
-  -webkit-animation: myAnimation 1.8s linear infinite;
-          animation: myAnimation 1.8s linear infinite;
+  -webkit-animation: myAnimation 2s linear infinite;
+          animation: myAnimation 2s linear infinite;
 }
 @-webkit-keyframes myAnimation {
   0% {
-    transform: translateY(17px);
+    transform: translateY(9px);
     opacity: 0;
   }
   5% {
     opacity: 0.2;
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
   }
   70% {
-    opacity: 0.7;
+    opacity: 0.2;
   }
   100% {
-    transform: translateY(-17px);
+    transform: translateY(-9px);
     opacity: 0;
   }
 }
 @keyframes myAnimation {
   0% {
-    transform: translateY(17px);
+    transform: translateY(9px);
     opacity: 0;
   }
   5% {
     opacity: 0.2;
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
   }
   70% {
-    opacity: 0.7;
+    opacity: 0.2;
   }
   100% {
-    transform: translateY(-17px);
+    transform: translateY(-9px);
     opacity: 0;
   }
 }
-footer .to_top:hover .fa-angle-up {
+
+.to_top:hover .fa-angle-up {
   -webkit-animation: 0;
           animation: 0;
 }
-footer .to_top.active {
+
+.to_top.active {
   bottom: 2rem;
   pointer-events: auto;
   opacity: 1;
@@ -707,6 +710,11 @@ input:focus, textarea:focus {
 #cart_product {
   padding: 0rem 5rem;
 }
+@media (max-width: 767px) {
+  #cart_product {
+    padding: 0 1.5rem;
+  }
+}
 #cart_product .box {
   padding: 3rem 0;
   border-bottom: 1px solid #c9c9c9;
@@ -728,8 +736,28 @@ input:focus, textarea:focus {
 #cart_product .box .box_left {
   width: 55%;
 }
+@media (max-width: 550px) {
+  #cart_product .box .box_left {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  #cart_product .box .box_left {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  #cart_product .box .box_left h2 {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
 #cart_product .box .box_right {
   width: 40%;
+}
+@media (max-width: 550px) {
+  #cart_product .box .box_right {
+    width: 220px;
+  }
 }
 #cart_product .box .box_right .flex_box {
   flex-direction: column;
@@ -783,21 +811,48 @@ input:focus, textarea:focus {
   padding: 3rem 5rem;
   border-bottom: 1px solid #c9c9c9;
 }
+@media (max-width: 767px) {
+  .button_sec {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+}
 .button_sec button {
   border-radius: 30px;
-  margin-right: 150px;
+  margin-right: 10%;
+}
+@media (max-width: 767px) {
+  .button_sec button {
+    margin-right: 0;
+    margin: 1rem;
+    width: 250px;
+  }
+}
+.button_sec button:hover {
+  border-radius: 0;
+  background-color: #000000;
 }
 
 #shipping_sec {
   padding: 3rem 5rem;
   border-bottom: 1px solid #c9c9c9;
 }
+@media (max-width: 767px) {
+  #shipping_sec {
+    padding: 3rem 1rem;
+  }
+}
 #shipping_sec .map {
-  width: 40%;
+  width: 50%;
 }
 #shipping_sec .shipping_details {
-  width: 40%;
+  width: 300px;
   align-items: flex-start;
+}
+@media (max-width: 767px) {
+  #shipping_sec .shipping_details {
+    width: 100%;
+  }
 }
 #shipping_sec .shipping_details .input_area {
   width: 100%;
@@ -815,23 +870,37 @@ input:focus, textarea:focus {
 }
 #shipping_sec .shipping_details .input_area select,
 #shipping_sec .shipping_details .input_area .zipcode {
-  width: 300px;
+  width: 100%;
   margin: 0.7rem 0;
   border: none;
   padding: 10px 25px;
   background-color: #ebe9e9;
 }
+@media (max-width: 767px) {
+  #shipping_sec .shipping_details .input_area select,
+#shipping_sec .shipping_details .input_area .zipcode {
+    width: 285px;
+  }
+}
 #shipping_sec .shipping_details .input_area select option {
-  width: 300px;
   margin: 0.7rem 0;
   border: none;
 }
 #shipping_sec .shipping_details .input_area button {
-  width: 150px;
+  width: 100%;
   height: 40px;
   padding: 0;
   border-radius: 30px;
   margin: 1rem 0;
+}
+@media (max-width: 767px) {
+  #shipping_sec .shipping_details .input_area button {
+    width: 285px;
+  }
+}
+#shipping_sec .shipping_details .input_area button:hover {
+  border-radius: 0;
+  background-color: #000000;
 }
 
 @media (min-width: 800px) {
