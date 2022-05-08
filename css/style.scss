@@ -220,12 +220,15 @@ span {
         font-size: 5.2vw;
         // font-size: 3rem;
         padding-bottom: 0;
+        transition: 0.5s;
       }
+
       p {
         font-size: 2vw;
         color: $grey;
         padding: 0 1rem;
       }
+
       button {
         background: $dark_grey;
         color: $white;
@@ -642,11 +645,10 @@ footer {
     font-size: 2rem;
     opacity: 0;
     pointer-events: none;
-    flex-direction: column;
     transition: all 0.4s;
     background-color: $primary_color;
     border-radius: 50%;
-    padding: 0.3rem 0.7rem;
+    padding: 0rem 0.7rem;
     z-index: 1000;
 
     .fa-angle-up {
