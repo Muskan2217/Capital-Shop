@@ -12,7 +12,8 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     autoplay: true,
-
+    mouseDrag: true,
+    touchDrag: true,
     responsive: {
       0: {
         items: 1,
@@ -39,7 +40,7 @@ $(document).ready(function () {
     dots: false,
     autoplay: false,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     responsive: {
       0: {
         items: 1,
@@ -55,6 +56,7 @@ $(document).ready(function () {
 
   //  four ---------------------------
   four.owlCarousel({
+
     loop: true,
     margin: 10,
     nav: true,
@@ -78,6 +80,49 @@ $(document).ready(function () {
     },
   });
 });
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// #home slider img slide show-------
+
+let images = ["img/banner11.jpg", "img/banner22.jpg"];
+let i = 0;
+
+function slideShow() {
+  document.getElementById("sider_imgs").src = images[i];
+
+  if (i < images.length - 1) {
+    i++;
+    document.querySelector(".text_area").style.right = "8%";
+  } else {
+    i = 0;
+    document.querySelector(".text_area").style.right = "40%";
+  }
+  setTimeout("slideShow()", 5000);
+}
+
+window.onload = slideShow;
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    document
+      .getElementById("navbar")
+      .setAttribute("style", " position: fixed; top:0; left:0; right:0;");
+    document.getElementById("navbar").style.boxShadow =
+      "0 5px 20px 0 rgba(0, 0, 0, .2)";
+  } else {
+    document
+      .getElementById("navbar")
+      .setAttribute("style", "position: static; boxShadow:0; top:-100px");
+  }
+}
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // toggle menu =============================
@@ -158,46 +203,6 @@ document.getElementById("blog").addEventListener("click", function () {
   });
 });
 
-// #home slider img slide show-------
-
-let images = ["img/banner11.jpg", "img/banner22.jpg"];
-let i = 0;
-
-function slideShow() {
-  document.getElementById("sider_imgs").src = images[i];
-
-  if (i < images.length - 1) {
-    i++;
-    document.querySelector(".text_area").style.right = "8%";
-  } else {
-    i = 0;
-    document.querySelector(".text_area").style.right = "40%";
-  }
-  setTimeout("slideShow()", 5000);
-}
-
-window.onload = slideShow;
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    document
-      .getElementById("navbar")
-      .setAttribute("style", " position: fixed; top:0; left:0; right:0;");
-    document.getElementById("navbar").style.boxShadow =
-      "0 5px 20px 0 rgba(0, 0, 0, .2)";
-  } else {
-    document
-      .getElementById("navbar")
-      .setAttribute("style", "position: static; boxShadow:0; top:-100px");
-  }
-}
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // cart number increase and decrese function

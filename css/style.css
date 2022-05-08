@@ -167,6 +167,7 @@ span {
 #home #slider .text_area h1 {
   font-size: 5.2vw;
   padding-bottom: 0;
+  transition: 0.5s;
 }
 #home #slider .text_area p {
   font-size: 2vw;
@@ -525,11 +526,10 @@ footer .to_top {
   font-size: 2rem;
   opacity: 0;
   pointer-events: none;
-  flex-direction: column;
   transition: all 0.4s;
   background-color: #df1616;
   border-radius: 50%;
-  padding: 0.3rem 0.7rem;
+  padding: 0rem 0.7rem;
   z-index: 1000;
 }
 footer .to_top .fa-angle-up {
@@ -600,8 +600,8 @@ footer .to_top .fa-angle-up {
 
 .owl-nav button.owl-next:hover,
 .owl-nav button.owl-prev:hover {
-  color: #df1616;
-  background-color: red;
+  color: #df1616 !important;
+  background-color: transparent !important;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
